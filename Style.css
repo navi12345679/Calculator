@@ -25,7 +25,8 @@ body{
    background-color: hsl(0, 0%, 20%);
    color: white;
 }
-#keys{display: grid;
+#keys{
+    display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 8px;
 border-radius: 15px;
@@ -56,4 +57,37 @@ button:active{
 }
 .operator-keys:active{
     background-color: hsl(39, 93%, 68%);
+}
+@media(max-width:500px){
+     body{
+        height: 50vh;
+        width: 80vh;
+        margin-top: 200px;
+       margin-bottom: 200px;
+     }
+     #calculator{
+        max-width: 200px;
+        max-height: 400px;
+        border-radius: 20px;
+     }
+     #display{
+        padding: 10px;
+   font-size: 2rem;
+ }
+ #keys{
+    gap: 2px;
+border-radius: 4px;
+padding: 10px;
+ }
+ button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: hsl(0, 0%, 30%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+ }
 }
